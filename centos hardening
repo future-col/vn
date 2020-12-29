@@ -1,0 +1,5 @@
+- hosts: localhost
+  collections:
+    - devsec.hardening
+  roles:
+    - devsec.hardening.os_hardening
