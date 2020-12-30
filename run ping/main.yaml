@@ -1,0 +1,16 @@
+---
+#install app on centos
+  name: install
+   hosts: all
+   become: yes
+
+   #vars:
+      #oracle_db_port_value : 1521
+
+   tasks:
+   -name: Install htop
+      yum: yum install htop
+
+  # -name: Ensure the installed service is enabled and running
+   #service:
+    #  name: <your service name>
