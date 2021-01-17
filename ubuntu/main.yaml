@@ -1,3 +1,10 @@
 ---
 - name: Install htop
   apt: name=htop state=present
+
+- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+  user:
+    name: vn
+    comment: vishakh nair
+    uid: 1040
+    group: wheel
